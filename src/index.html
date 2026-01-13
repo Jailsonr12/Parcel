@@ -11,6 +11,7 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="./styles/main.scss" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
 
     <body>
@@ -22,8 +23,7 @@
                     alt="EBAC"
                 />
                 <p class="hero__text">
-                    O maior evento de tecnologia do Brasil começa em 10d 11h 23m
-                    45s
+                    O maior evento de tecnologia do Brasil começa em <span id="dataDoEvento"></span>
                 </p>
                 <div class="infos-bar">
                     <ul class="infos-bar__infos">
@@ -46,8 +46,8 @@
             </div>
         </header>
 
-        <section class="event">
-            <div class="container">
+        <section class="event event--frontend" >
+            <div class="container" data-aos="fade-right">
                 <div class="event__details">
                     <h2 class="event__details__title">Front-End</h2>
                     <p class="event__details__description">
@@ -65,5 +65,64 @@
                 />
             </div>
         </section>
+        <section class="event event--ui-ux event--image-left" >
+            <div class="container" data-aos="fade-left">
+                <div class="event__details">
+                    <h2 class="event__details__title">UI/UX</h2>
+                    <p class="event__details__description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Ducimus beatae in, ullam minima, eum incidunt
+                        mollitia quaerat harum nulla recusandae explicabo nam,
+                        et pariatur accusamus reprehenderit illum dolorem
+                        delectus ex?
+                    </p>
+                </div>
+                <img
+                    class="event__image"
+                    src="./images/frontend.png"
+                    alt="Front-end"
+                />
+            </div>
+        </section>
+        <section class="event event--data-science" >
+            <div class="container" data-aos="fade-right">
+                <div class="event__details">
+                    <h2 class="event__details__title">Data Science</h2>
+                    <p class="event__details__description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Ducimus beatae in, ullam minima, eum incidunt
+                        mollitia quaerat harum nulla recusandae explicabo nam,
+                        et pariatur accusamus reprehenderit illum dolorem
+                        delectus ex?
+                    </p>
+                </div>
+                <img
+                    class="event__image"
+                    src="./images/frontend.png"
+                    alt="Front-end"
+                />
+            </div>
+        </section>
+        <section class="event event--backend event--image-left" >
+            <div class="container" data-aos="fade-left">
+                <div class="event__details">
+                    <h2 class="event__details__title">Backe-end</h2>
+                    <p class="event__details__description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Ducimus beatae in, ullam minima, eum incidunt
+                        mollitia quaerat harum nulla recusandae explicabo nam,
+                        et pariatur accusamus reprehenderit illum dolorem
+                        delectus ex?
+                    </p>
+                </div>
+                <img
+                    class="event__image"
+                    src="./images/frontend.png"
+                    alt="Front-end"
+                />
+            </div>
+        </section>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="scripts/main.js"></script>
     </body>
 </html>
