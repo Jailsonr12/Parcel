@@ -1,128 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="./styles/main.scss" />
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    </head>
 
-    <body>
-        <header class="hero">
-            <div class="container">
-                <img
-                    class="hero__logo"
-                    src="./images/ebac_logo.svg"
-                    alt="EBAC"
-                />
-                <p class="hero__text">
-                    O maior evento de tecnologia do Brasil começa em <span id="dataDoEvento"></span>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Área de Tecnologia da Informação (TI)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/main.scss" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="./images/icone.png" type="image/png">
+
+</head>
+
+<body>
+    <header class="hero">
+        <div class="container">
+            <img class="hero__logo" src="./images/icone.png" alt="EBAC" />
+            <p class="hero__text">
+                O maior evento de tecnologia do Brasil começa em <span id="dataDoEvento"></span>
+            </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b> Blumenau - Centro - Santa
+                        Catarina
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        A partir de R$: 45,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b> 17/08/2026 as 12h
+                    </li>
+                </ul>
+                <a href="" class="button button--primary">Garanta sua vaga</a>
+            </div>
+        </div>
+    </header>
+    <Section class="history">
+        <div class="container" data-aos="">
+            <div class="history__details">
+                <h2 class="history__details__title">
+                    Área de Tecnologia da Informação (TI)
+                </h2>
+                <p class="history__details__description">A Tecnologia da Informação (TI) é responsável pelo uso da tecnologia para gerenciar, processar, armazenar e transmitir dados, sendo fundamental para o funcionamento e a inovação das empresas e da sociedade moderna. A área é dinâmica e exige aprendizado contínuo dos profissionais.
                 </p>
-                <div class="infos-bar">
-                    <ul class="infos-bar__infos">
-                        <li class="infos-bar__infos__item">
-                            <b>Localização</b> Blumenau - Centro - Santa
-                            Catarina
-                        </li>
-                        <li class="infos-bar__infos__item">
-                            <b>Preço</b>
-                            A partir de R$: 45,00
-                        </li>
-                        <li class="infos-bar__infos__item">
-                            <b>Quando</b> 17/08/2026 as 12h
-                        </li>
-                    </ul>
-                    <a href="" class="button button--primary"
-                        >Garanta sua vaga</a
-                    >
-                </div>
+                <img class="history__details__image" src="images/ti.jpg" alt="">
             </div>
-        </header>
+        </div>
+    </Section>
 
-        <section class="event event--frontend" >
-            <div class="container" data-aos="fade-right">
-                <div class="event__details">
-                    <h2 class="event__details__title">Front-End</h2>
-                    <p class="event__details__description">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Ducimus beatae in, ullam minima, eum incidunt
-                        mollitia quaerat harum nulla recusandae explicabo nam,
-                        et pariatur accusamus reprehenderit illum dolorem
-                        delectus ex?
-                    </p>
-                </div>
-                <img
-                    class="event__image"
-                    src="./images/frontend.png"
-                    alt="Front-end"
-                />
+    <section class="event event--frontend">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Front-End</h2>
+                <p class="event__details__description">
+                    O Front-End é responsável pela interface visual e pela interação do usuário com sistemas e aplicações.
+                    Envolve o desenvolvimento de layouts responsivos, animações e componentes utilizando tecnologias como
+                    HTML, CSS e JavaScript, garantindo usabilidade, acessibilidade e boa experiência para o usuário.
+                </p>
             </div>
-        </section>
-        <section class="event event--ui-ux event--image-left" >
-            <div class="container" data-aos="fade-left">
-                <div class="event__details">
-                    <h2 class="event__details__title">UI/UX</h2>
-                    <p class="event__details__description">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Ducimus beatae in, ullam minima, eum incidunt
-                        mollitia quaerat harum nulla recusandae explicabo nam,
-                        et pariatur accusamus reprehenderit illum dolorem
-                        delectus ex?
-                    </p>
-                </div>
-                <img
-                    class="event__image"
-                    src="./images/ui-ux.png"
-                    alt="Front-end"
-                />
+            <img class="event__image" src="./images/frontend.jpg" alt="Front-end" />
+        </div>
+    </section>
+    <section class="event event--ui-ux event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">UI/UX</h2>
+                <p class="event__details__description">
+                    UI/UX foca na experiência e na usabilidade dos sistemas, buscando criar interfaces intuitivas,
+                    agradáveis e funcionais. A área envolve pesquisa com usuários, prototipação, design visual
+                    e testes de usabilidade para garantir que o produto atenda às necessidades reais do público.
+                </p>
             </div>
-        </section>
-        <section class="event event--data-science" >
-            <div class="container" data-aos="fade-right">
-                <div class="event__details">
-                    <h2 class="event__details__title">Data Science</h2>
-                    <p class="event__details__description">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Ducimus beatae in, ullam minima, eum incidunt
-                        mollitia quaerat harum nulla recusandae explicabo nam,
-                        et pariatur accusamus reprehenderit illum dolorem
-                        delectus ex?
-                    </p>
-                </div>
-                <img
-                    class="event__image"
-                    src="./images/data.png"
-                    alt="Front-end"
-                />
+            <img class="event__image" src="./images/ui-ux.png" alt="Front-end" />
+        </div>
+    </section>
+    <section class="event event--data-science">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Data Science</h2>
+                <p class="event__details__description">
+                    Data Science é a área responsável por coletar, analisar e interpretar grandes volumes de dados.
+                    Utiliza estatística, programação e aprendizado de máquina para gerar insights estratégicos,
+                    apoiar decisões e identificar padrões que agregam valor aos negócios.
+                </p>
             </div>
-        </section>
-        <section class="event event--backend event--image-left" >
-            <div class="container" data-aos="fade-left">
-                <div class="event__details">
-                    <h2 class="event__details__title">Backe-end</h2>
-                    <p class="event__details__description">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Ducimus beatae in, ullam minima, eum incidunt
-                        mollitia quaerat harum nulla recusandae explicabo nam,
-                        et pariatur accusamus reprehenderit illum dolorem
-                        delectus ex?
-                    </p>
-                </div>
-                <img
-                    class="event__image"
-                    src="./images/backend.png"
-                    alt="Front-end"
-                />
+            <img class="event__image" src="./images/data.jpg" alt="Front-end" />
+        </div>
+    </section>
+    <section class="event event--backend event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Backe-end</h2>
+                <p class="event__details__description">
+                    O Back-End cuida da lógica do sistema, regras de negócio, bancos de dados e integrações.
+                    Essa área garante o funcionamento correto das aplicações, a segurança das informações
+                    e a comunicação entre o servidor e o Front-End.
+                </p>
             </div>
-        </section>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script src="scripts/main.js"></script>
-    </body>
+            <img class="event__image" src="./images/backend.jpg" alt="Front-end" />
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
 </html>

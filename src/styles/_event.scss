@@ -2,42 +2,52 @@
 
 .event {
     padding: 80px 0;
-    
-    &--frontend{
+
+    &--frontend {
         background-image: linear-gradient(variable.$red1, variable.$red2);
     }
 
-    &--ui-ux{
+    &--ui-ux {
         background-image: linear-gradient(variable.$red2, variable.$pink);
     }
 
-    &--data-science{
+    &--data-science {
         background-image: linear-gradient(variable.$pink, variable.$yellow);
     }
 
-    &--backend{
+    &--backend {
         background-image: linear-gradient(variable.$yellow, variable.$pink);
     }
 
-    &--image-left{
+    &--image-left {
         .container {
-            flex-direction: row-reverse;            
+            flex-direction: row-reverse;
         }
     }
+
     .container {
         gap: 40px;
         display: flex;
     }
 
     &__image {
-        max-width: 360px;
+        width: 360px;
+        height: 360px;
+        border-radius: 50%;
+        object-fit: cover;
     }
+    
 
     &__details {
+        background-color: #1e60b68c;
+        border-radius: 10px 70px;
+        padding: 10px;
+
         &__title {
             font-size: 18px;
             font-weight: bold;
-            margin-bottom: 16px;
+            text-align: center;
+
         }
 
         &__description {
@@ -52,12 +62,14 @@
         }
 
         &__image {
-            width: 100%s;
+            width: 100%;
         }
 
-        &_-datails {
+        &__datails {
+            border-radius: 5px 5px;
             margin-right: 0;
             margin-bottom: 16px;
         }
     }
+
 }
