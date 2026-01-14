@@ -3,15 +3,20 @@
     padding: 16px 24px;
     background-color: variable.$textColor;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    border-radius: 40px;
+    align-items: stretch;
 
     &__infos {
         display: flex;
         gap: 40px;
 
+        background-color: aquamarine;
+        padding: 5px 15px;
+        border-radius: 15px;
         &__item {
             font-size: 14px;
-            color: variable.$secondaryTextColor;
+            color: variable.$august-sun-green;
             b {
                 font-size: 18px;
                 display: block;

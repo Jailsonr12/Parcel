@@ -4,19 +4,19 @@
     padding: 80px 0;
 
     &--frontend {
-        background-image: linear-gradient(variable.$red1, variable.$red2);
+        background-image: linear-gradient(variable.$august-sky-blue, variable.$august-folklore-red);
     }
 
     &--ui-ux {
-        background-image: linear-gradient(variable.$red2, variable.$pink);
+        background-image: linear-gradient(variable.$august-folklore-red, variable.$august-floral-pink);
     }
 
     &--data-science {
-        background-image: linear-gradient(variable.$pink, variable.$yellow);
+        background-image: linear-gradient(variable.$august-floral-pink, variable.$august-sun-green);
     }
 
     &--backend {
-        background-image: linear-gradient(variable.$yellow, variable.$pink);
+        background-image: linear-gradient(variable.$august-sun-green, variable.$august-floral-pink);
     }
 
     &--image-left {
@@ -31,22 +31,28 @@
     }
 
     &__image {
-        width: 360px;
-        height: 360px;
+        width: 300px;
+        height: 300px;
         border-radius: 50%;
         object-fit: cover;
     }
     
 
     &__details {
-        background-color: #1e60b68c;
+        background-color: variable.$primary-background;
         border-radius: 10px 70px;
         padding: 10px;
-
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        
         &__title {
             font-size: 18px;
+            text-transform: uppercase;
             font-weight: bold;
             text-align: center;
+            margin-bottom: 20px;
 
         }
 

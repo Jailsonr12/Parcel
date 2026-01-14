@@ -8,10 +8,11 @@
     text-align: center;
     white-space: nowrap;
     align-items: center;
+    border-radius: 20px;
 
     &--primary {
         color: variable.$textColor;
-        background-color: variable.$purple;
+        background-color: variable.$august-tradition-purple;
     }
 
     @media (max-width: 640px) {
